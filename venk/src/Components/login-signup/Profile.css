@@ -1,0 +1,241 @@
+/* ============================= */
+/* GLOBAL PAGE STYLING */
+/* ============================= */
+
+.profile-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  padding: 40px;
+  font-family: "Segoe UI", sans-serif;
+  color: white;
+}
+
+/* ============================= */
+/* TOP BAR */
+/* ============================= */
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  position: relative;   /* 🔥 IMPORTANT */
+}
+
+
+.app-name {
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.profile-area {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.avatar {
+  width: 45px;
+  height: 45px;
+  background: #00c6ff;
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.dots {
+  cursor: pointer;
+  font-size: 22px;
+}
+
+/* ============================= */
+/* DROPDOWN PANEL */
+/* ============================= */
+
+.dropdown-panel {
+  position: absolute;
+  top: 60px;
+  right: 0;
+  width: 260px;
+
+  background: rgba(20, 20, 20, 0.95);
+  border-radius: 12px;
+  padding: 20px;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+
+  animation: fadeIn 0.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.logout-btn {
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 8px;
+  background: #ff4b5c;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.logout-btn:hover {
+  background: #ff2e43;
+}
+
+/* ============================= */
+/* ADD PRODUCT SECTION */
+/* ============================= */
+
+.add-product-section {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(15px);
+  padding: 30px;
+  border-radius: 16px;
+  margin-bottom: 40px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.add-product-section h3 {
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.add-form {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.add-form input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.add-form input[type="number"] {
+  max-width: 200px;
+}
+
+.add-form button {
+  padding: 12px 20px;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(90deg, #00f260, #0575e6);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.add-form button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+}
+
+/* ============================= */
+/* PRODUCT SECTION */
+/* ============================= */
+
+.items-section h3 {
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+/* GRID LAYOUT */
+
+.items-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* PRODUCT CARD */
+
+.item-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(15px);
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+  transition: 0.3s;
+}
+
+.item-card:hover {
+  transform: translateY(-5px);
+}
+
+.item-card strong {
+  color: #00f260;
+}
+
+.item-url {
+  word-break: break-all;
+  font-size: 13px;
+  opacity: 0.8;
+  margin-top: 10px;
+}
+
+/* EMPTY TEXT */
+
+.items-section p {
+  opacity: 0.7;
+}
+
+.product-img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.status-badge {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.status-badge.BUY {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.status-badge.NEAR {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.status-badge.WAIT {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.delete-btn {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  margin-top: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background-color: #cc0000;
+}

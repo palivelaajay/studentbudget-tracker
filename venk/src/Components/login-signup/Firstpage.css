@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ---------- PAGE ---------- */
+.page {
+  width: 100vw;
+  height: 100vh;
+  background: #f6f9ff;
+  padding: 20px;
+  position: relative;
+}
+
+/* ---------- TOP LEFT LOGO ---------- */
+.top-row {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.slant-logo {
+  display: flex;
+  gap: 6px;
+}
+
+.slant {
+  width: 18px;
+  height: 30px;
+  background: #2563eb;
+  transform: skew(-20deg);
+  border-radius: 4px;
+}
+
+.s1 { width: 10px; opacity: 0.6; }
+.s2 { width: 15px; opacity: 0.8; }
+
+.logo-text {
+  font-size: 20px;
+  font-weight: 600;
+  color: #111827;
+}
+
+/* ---------- CENTER CONTENT ---------- */
+.center-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 14px;
+}
+
+/* ---------- IMAGE ---------- */
+.shopping-image {
+  width: 420px;
+  max-width: 95%;
+  height: auto;
+  filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.15));
+}
+
+/* ---------- TEXT ---------- */
+.title {
+  font-size: 34px;
+  font-weight: 800;
+  color: #111827;
+}
+
+/* Brand names row */
+.brand-row {
+  display: flex;
+  gap: 18px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.flipkart { color: #2874f0; }
+.amazon   { color: #111827; }
+.myntra   { color: #e91e63; }
+.ajio     { color: #0f172a; }
+.meesho   { color: #f43397; }
+
+.subtitle {
+  font-size: 16px;
+  color: #6b7280;
+  max-width: 500px;
+}
+
+/* ---------- BUTTONS ---------- */
+.button-row {
+  display: flex;
+  gap: 14px;
+  margin-top: 10px;
+}
+
+.btn {
+  padding: 14px 34px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Get Started */
+.primary {
+  background: #2563eb;
+  color: white;
+}
+
+.primary:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(37, 99, 235, 0.3);
+}
+
+/* Login */
+.secondary {
+  background: white;
+  color: #2563eb;
+  border: 1px solid #2563eb;
+}
+
+.secondary:hover {
+  background: #2563eb;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(37, 99, 235, 0.25);
+}
+
+/* Hover Login → Get Started turns white */
+.secondary:hover ~ .primary {
+  background: white;
+  color: #2563eb;
+  border: 1px solid #2563eb;
+}
