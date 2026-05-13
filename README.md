@@ -7,9 +7,9 @@ Users can:
 * 🔐 Register & Login securely
 * 📦 Add product URLs
 * 💰 Set budget prices
-* 🔄 Automatically monitor price changes using cron jobs
+* 🔄 Automatically monitor product prices using cron jobs
 
-The system uses web scraping to fetch live product prices and stores price history in MongoDB.
+The system uses web scraping to fetch live product prices and stores product data in MongoDB.
 
 ## 🛠 Tech Stack
 
@@ -18,7 +18,6 @@ The system uses web scraping to fetch live product prices and stores price histo
 * Express
 * MongoDB
 * JWT Authentication
-* Chart.js
 * node-cron
 
 ## 🚀 Features
@@ -27,21 +26,27 @@ The system uses web scraping to fetch live product prices and stores price histo
 * Product Tracking
 * Budget Monitoring
 * Auto Price Updates
-* Price History Graphs
 * Delete & Update Products
+
+## 🔮 Upcoming Features (Next Version)
+
+* 📈 Price History Graphs
+* 📧 Email Notifications
+* 🛒 Multi-platform Tracking
+* 🔔 Price Drop Alerts
 
 ## ▶ Run Project
 
 ### Backend
 
-```bash id="k56ehs"
+```bash id="vlq1gi"
 npm install
 node index.js
 ```
 
 ### Frontend
 
-```bash id="hnwyyl"
+```bash id="ijw2gk"
 npm install
 npm start
 ```
